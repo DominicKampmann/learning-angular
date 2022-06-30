@@ -481,8 +481,8 @@
   <p>{{username}}</p>
   <button [disabled]="!username ? true : false" (click)="empty_username()">Klick</button>
 
-  <button (click)="log_clicks()">Display Details</button>
-  <p *ngIf="button_clicks % 2 == 0">Facts for faggots only!</p>
+  <button (click)="log_clicks()">Add numbers!</button>
+  <p *ngIf="button_clicks % 2 == 0">Button clicked</p>
   <p 
   *ngFor="let clicks_number of button_clicks_arr" 
   [ngStyle]="{'background-color': clicks_number >= 5 ? 'blue' : 'transparent'}" 
