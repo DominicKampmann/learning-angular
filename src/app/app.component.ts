@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'learning-angular';
   username = ''
 
@@ -37,6 +37,17 @@ export class AppComponent {
       this.oddNumbers.push(seconds);
     }
   }
+
+  @ViewChild('test') testViewChild: ElementRef;
+  testValue = '';
+  constructor()
+  {}
+
+  ngOnInit() {
+    this.testValue = this.testViewChild.nativeElement.innerHTML;
+  }
+
+
 
 
 
