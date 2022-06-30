@@ -1,0 +1,22 @@
+.warning
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+app-success-alert
+{
+    flex:0.5;
+    padding: 10%;
+}
+
+app-warning-alert
+{
+    flex:0.5;
+    padding: 10%;
+}
+
+.greater-equal-5
+{
+    color:white;
+}
